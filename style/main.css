@@ -5,6 +5,11 @@ body {
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* CONTAINER */
@@ -16,4 +21,99 @@ body {
   padding-right: 50px;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* SITE HEADER  */
+
+.header-top {
+  background-color: #f6f6f6;
+  margin-bottom: 30px;
+}
+
+.header-top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.site-logo {
+  text-decoration: none;
+  border-radius: 7px;
+  margin-right: 33px;
+}
+
+.exchange-rate {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-right: 247px;
+}
+
+.exchange-rate-item {
+  display: flex;
+  color: #555;
+}
+
+.exchange-rate-item span:nth-child(1) {
+  color: #2959ce;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.exchange-rate-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 275px;
+  padding: 13px 15px 12px;
+  background-color: #fff;
+  border-radius: 60px;
+  font-size: 14px;
+  margin-right: 25px;
+}
+
+.search svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  padding: 3px;
+  background-color: #dce6ff;
+  border-radius: 39px;
+  font-size: 13px;
+  color: #a6a6a6;
+  margin-right: 25px;
+}
+
+.language-uz {
+  padding: 8px 7px 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+  margin-right: 8px;
+}
+
+.main-btn {
+  color: #fff;
+  padding: 13px 20px;
+  background-color: #7296ec;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
 }
