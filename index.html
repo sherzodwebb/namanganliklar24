@@ -19,6 +19,7 @@
   <body>
     <!-- SITE HEADER -->
     <header class="site-header">
+      <!--SITE HEADER TOP  -->
       <div class="header-top">
         <div class="header-top-container container">
           <a class="site-logo" href="#">
@@ -39,7 +40,11 @@
             </li>
           </ul>
 
-          <div class="search">
+          <form
+            action="https://echo.htmlacademy.ru"
+            class="global-search-form"
+            method="get"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -54,8 +59,15 @@
                 fill="#8D8D8D"
               />
             </svg>
-            <input type="text" placeholder="Поиск" />
-          </div>
+            <input
+              class="global-search-form-input"
+              type="search"
+              name="username"
+              aria-label="Поиск"
+              placeholder="Поиск"
+              required
+            />
+          </form>
 
           <div class="language">
             <span class="language-uz">УЗ</span>
@@ -66,6 +78,38 @@
             <div>Войти</div>
           </a>
         </div>
+      </div>
+
+      <!-- SITE NAVBAR  -->
+      <nav class="site-navbar container">
+        <ul class="navbar-list">
+          <li class="navbar-list-item"><a href="#">Главное</a></li>
+          <li class="navbar-list-item"><a href="#">Интересное</a></li>
+          <li class="navbar-list-item"><a href="#">Экономика</a></li>
+          <li class="navbar-list-item"><a href="#">Политика</a></li>
+          <li class="navbar-list-item"><a href="#">Общество</a></li>
+          <li class="navbar-list-item"><a href="#">Технологии</a></li>
+          <li class="navbar-list-item"><a href="#">Спорт</a></li>
+          <li class="navbar-list-item"><a href="#">Культура</a></li>
+          <li class="navbar-list-item"><a href="#">Происшествия</a></li>
+          <li class="navbar-list-item"><a href="#">Наука</a></li>
+        </ul>
+      </nav>
+
+      <!-- ADVERTISING BANNER  -->
+      <div class="advertising-banner container">
+        <a class="advertising-banner-img" href="#">
+          <img
+            src="./images/advertising-banner.png"
+            alt="sire advertising banner"
+            srcset="
+              ./images/advertising-banner.png    1x,
+              ./images/advertising-banner@2x.png 2x
+            "
+            width="1200"
+            height="128"
+          />
+        </a>
       </div>
     </header>
   </body>
